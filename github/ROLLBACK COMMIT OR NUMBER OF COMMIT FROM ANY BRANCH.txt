@@ -1,0 +1,12 @@
+If you have been making commits on your main branch while you coded, but you now want to move those commits to a different branch:
+
+Create a new branch with the same HEAD as current, and switch to it:
+git checkout -b new-feature-branch
+Now force the original "messy" branch to roll back, without switching to it:
+
+$ git branch -f messy-branch commit-id
+For example:
+
+$ git branch -f master origin/master
+or if you have made 4 commits:
+$ git branch -f master HEAD~4

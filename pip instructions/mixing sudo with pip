@@ -1,0 +1,8 @@
+(venv_boiler)ubuntu@ip-172-31-31-139:~$ sudo ~/.virtualenvs/venv_boiler/bin/pip install grequests
+
+
+
+chnage port 5003
+change 0.0.0.0 in both
+
+in admin settings logger url : http://0.0.0.0:5003

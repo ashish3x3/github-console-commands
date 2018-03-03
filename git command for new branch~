@@ -1,0 +1,65 @@
+git config --global user.name "Ashish Kumar Singh"
+
+git remote set-url origin https://ashish3x3@bitbucket.org/ashish3x3/boiler.git
+
+PUSHING TO  rmote branch
+$ git checkout -b issue25
+... edit files, add and commit ...
+$ git push -u origin issue25
+
+
+
+how to create new branch
+https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+
+
+$ git checkout -b [name_of_your_new_branch]
+
+$ git push origin [name_of_your_new_branch]
+
+
+
+
+
+$ git branch
+
+ git remote add [name_of_your_remote] 
+
+
+$ git push origin [name_of_your_remote]
+
+
+$ git fetch [name_of_your_remote]
+
+
+$ git merge [name_of_your_remote]/develop
+
+Delete a branch on your local filesystem :
+$ git branch -d [name_of_your_new_branch]
+To force the deletion of local branch on your filesystem :
+$ git branch -D [name_of_your_new_branch]
+
+
+===============
+
+ADDING TO BRANCH :RECENT CHANGES 
+
+To add all the changes you've made:
+
+git add .
+
+To commit them:
+
+git commit -m "MY MESSAGE HERE" #-m is the message flag
+
+You can put those steps together like this:
+
+git commit -a -m "MY MESSAGE HERE"
+
+To push your committed changes from your local repository to your remote repository:
+
+git push origin master/git push origin issue23
+
+
+
+

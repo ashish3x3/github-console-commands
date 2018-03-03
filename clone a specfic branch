@@ -1,0 +1,9 @@
+wget https://bootstrap.pypa.io/ez_setup.py -O - | /usr/local/lib/python2.7.9/bin/python
+
+git clone -b log_tracking_new https://ashish3x3@bitbucket.org/ashish3x3/boiler.git
+
+
+git clone -b auto_report https://ashish3x3@bitbucket.org/ashish3x3/mywash_admin.git
+
+git clone -b Originate_RC_branch https://github.com/cloudlending/Genesis-Main.git
+

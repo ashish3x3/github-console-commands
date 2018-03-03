@@ -1,0 +1,23 @@
+git pull https://ashish3x3@bitbucket.org/wishabhilash/mywash_admin.git master
+
+resolve conflicts
+
+git add .
+
+git commit -m ""
+
+git push origin master
+
+git pull again as above ..this time no conflicts...
+
+done..
+
+{{#if paid }}
+                        <span class="label label-success label-mini">{{cash_collected}}/{{total_price}}
+                        </span>
+                        {{else}}
+                        <span class="label label-danger label-mini">{{cash_collected}}/{{total_price}}
+                        </span> 
+                        {{/if}}
+
+total express orders

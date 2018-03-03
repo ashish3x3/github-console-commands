@@ -1,0 +1,108 @@
+
+TO ADD:
+
+git add *
+
+$ git remote add origin https://github.com/ashish3x3/programming-concert.git
+
+https://ashish3x@bitbucket.org/ashish3x/portal-component-library.git
+$ git config --global http.sslVerify false
+
+$ git pull origin master
+
+$ git push origin master
+
+
+
+To Updtae later:
+
+git add *  or git add DP/file.java
+git status
+$ git commit -m "Added Questions on the top"
+$ git push origin master
+
+
+
+
+
+
+
+
+http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
+
+
+to push
+$ git 
+$ git commit -m 'initial commit'
+$ git push origin master
+
+git push <Git Remote path> --all
+
+IF FATAL ERROR REPO DOSENT EXIST
+
+git remote add origin URL_TO_YOUR_REPO
+
+$ git push origin master
+
+git remote add origin /htdocs/Media-Asset-Management-System.git
+
+git config --global http.sslVerify false
+
+git init
+git add .
+git commit -m "Initial commit"
+
+$ git pull origin master
+$ git push origin master
+$ git clone https://github.com/ashish3x3/university-management-system.git
+
+https://github.com/ashish3x3/Media-Asset-Management-System.git
+
+$ git fetch [remote-name]
+
+$ git remote show origin
+
+error st ssh
+https://help.github.com/articles/error-agent-admitted-failure-to-sign
+
+9418 not found error
+
+put at /etc/hosts  in linux server
+65.74.177.129 (ping ip of github.com)github.com wiki.github.com gist.github.com assets0.github.com assets1.github.com assets2.github.com assets3.github.com
+
+$ git remote rm paul
+$ git remote
+origin
+
+$ git remote rename pb paul
+$ git remote
+origin
+paul
+
+Adding Remote Repositories
+
+I’ve mentioned and given some demonstrations of adding remote repositories in previous sections, but here is how to do it explicitly. To add a new remote Git repository as a shortname you can reference easily, run git remote add [shortname] [url]:
+
+$ git remote
+origin
+$ git remote add pb git://github.com/paulboone/ticgit.git
+$ git remote -v
+origin  git://github.com/schacon/ticgit.git
+pb  git://github.com/paulboone/ticgit.git
+
+Now you can use the string pb on the command line in lieu of the whole URL. For example, if you want to fetch all the information that Paul has but that you don’t yet have in your repository, you can run git fetch pb:
+
+$ git fetch pb
+remote: Counting objects: 58, done.
+
+
+
+net start cntlm
+remote: Compressing objects: 100% (41/41), done.
+remote: Total 44 (delta 24), reused 1 (delta 0)
+Unpacking objects: 100% (44/44), done.
+From git://github.com/paulboone/ticgit
+ * [new branch]      master     -> pb/master
+ * [new branch]      ticgit     -> pb/ticgit
+
+Paul’s master branch is accessible locally as pb/master — you can merge it into one of your branches, or you can check out a local branch at that point if you want to inspect it.

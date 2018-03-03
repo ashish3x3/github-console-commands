@@ -1,0 +1,10 @@
+
+
+To store any module directly in python lib..don't just pip install anywhere..
+
+go to python.exe resptly oif the version and then
+
+A:\virtualEnvPython\python27>C:\Python27\python.exe -m pip install xlrd
+this will install xlrd in python27.lib.sitepackages
+
+and you don't need to refresh pycharm to update it..it will take it automatically..

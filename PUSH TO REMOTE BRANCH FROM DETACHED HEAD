@@ -1,0 +1,42 @@
+SO YOU messed up something and though of reverting to old nice commit...
+
+you  did git reflog took the hash of nice commit
+
+and git checkout hashof commit
+
+but now if you do git branch you will see ..
+A:\CLO_Branch_Org\Genesis-Main>git branch
+* (HEAD detached from ccf39bc)
+  Ashish_Vela_RC1
+  master
+
+
+  so you cannot just write git push origin branch-name bcz of two reason one bcz U are not on any branch rigth now second your remote tip is ahead then your nice commit..so it throws error.. Updates were rejected because a pushed branch tip is behind its remote..
+
+
+  In this case you have to do do 2 things..
+  first your synatcx for push will change to 
+
+  git push -f origin HEAD:name-of-your-branch
+  HEAD will reame as it is..no renaming
+
+  -f to force changes bcz your head is behind remote head,so force git to do wht you are saying..
+
+  done..
+
+
+  Also what this will do is remove your history from remote untill nice commit hash... in a way remove alllater commits after nice commit to start afresh after this commit agian..
+
+
+
+  Pulling recent changes to a branch from remote after above steps
+
+  Now we need to update our branch to remote branch head..
+
+  checkout to brach..git checkout branch-name...you may need to do git stash before moving
+
+  git pull origin other-branch
+
+Git is basically doing this: git fetch origin other-branch && git merge other-branch
+
+now your local brach is up to date woth remote branch

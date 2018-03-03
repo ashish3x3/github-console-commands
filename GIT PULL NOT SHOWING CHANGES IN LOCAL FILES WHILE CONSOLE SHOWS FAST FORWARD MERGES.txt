@@ -1,0 +1,15 @@
+
+GIT PULL ORIGIN originae_rc_branch
+
+shows fastforward merges and succesful adding of new lines to files but local file does not change... and doing gitpull again shows branch up to date..
+
+2 ways..
+1. make this branch as consotent wiht hte remote branch
+-- checkout to new  branch
+-- do   git reflog..and checkout to head befor U made pull request
+-- do pull request again...
+
+
+if still dodn'y show changes..
+
+--do git stash... done..now it should display changes locally..

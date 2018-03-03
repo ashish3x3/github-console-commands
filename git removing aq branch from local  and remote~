@@ -1,0 +1,27 @@
+To remove a local branch from your machine:
+
+git branch -d the_local_branch
+
+To remove a remote branch from the server:
+
+git push origin :the_remote_branch
+
+
+
+As of Git v1.7.0, you can delete a remote branch using
+
+git push origin --delete <branchName>
+which is easier to remember than
+
+git push origin :<branchName>
+which was added in Git v1.5.0 "to delete a remote branch or a tag."
+
+
+
+You can also use the following to delete the remote branch.
+
+git push --delete origin serverfix
+Which does the same thing as
+
+git push origin :serverfix
+but it may be easier to remember.

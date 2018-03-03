@@ -1,0 +1,26 @@
+git config --global http.proxy 172.16.30.20:8080
+
+git config --global http.proxy http://{domain}\\\{username}:{password}@{proxy ip}:{proxy port}
+
+
+https://github.com/ashish3x3/Media-Asset-Management-System.git
+
+
+git config --global http.sslverify false
+
+smart way to push
+git push https://mariusz@github.com/mariusz/project.git
+
+git config --global http.proxy http://ashish3x3:HACKERSc276@127.0.0.1:8088
+
+git remote set-url origin https://ashish3x3@github.com/ashish3x3/Media-Asset-Management-System.git
+
+ssh -i path/to/public/key git@github.com
+
+http://ashish@developers.iitb.ac.in/gitcode/git/~ashish/mam.git
+
+Commit From my account at http://ashish@developers.iitb.ac.in/gitcode/git/~ashish/mam.git
+
+
+set http_proxy=http://<login_internet>:<password_internet>@aproxy:aport
+set https_proxy=http://<login_internet>:<password_internet>@aproxy:aport

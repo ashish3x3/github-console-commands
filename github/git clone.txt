@@ -1,0 +1,8 @@
+I am using ssh remember....
+
+so intead of 
+gut clone https://lakek@github.com/latek/app.git
+
+use 
+
+git clone ssh://git@github.com/latek/app.git

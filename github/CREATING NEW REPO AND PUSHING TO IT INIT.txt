@@ -1,0 +1,37 @@
+go to cd "C:\Users\lenovo\workspace\PortalOrg" 
+
+git init
+
+git remote add origin https://ashish3x@bitbucket.org/ashish3x/portal-component-library.git
+
+git remote -v
+
+git add .
+
+git status
+
+git commit -m
+
+git push origin master
+======================
+
+to new branch
+git checkout -b my_new_branch
+
+git add .
+
+git commit-m ""
+
+git push origin new-branch
+
+
+
+
+
+
+
+
+
+
+
+

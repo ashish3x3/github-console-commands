@@ -1,0 +1,28 @@
+ git reflog
+
+
+git reset --hard 21e4dc9
+git reset --hard 1935b76
+git reset --hard 89aa339
+
+git checkout issue23
+
+
+git commit -m "reverting back to previous commit , code not working,merged properly"
+
+git clean -f
+
+git commit -m "reverting back to previous commit , code not working,merged properly"
+
+removing untracked files :
+
+git clean -f boiler/static/js/mywash_559192b727e76e168d52d32f.js~HEAD
+git clean -f boiler/static/js/mywash_558a5d3f27e76e1e10607501.js
+
+>>Removing boiler/static/js/mywash_559192b727e76e168d52d32f.js~HEAD
+
+git remote show origin
+
+ ps -aef | grep python
+
+

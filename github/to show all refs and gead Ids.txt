@@ -1,0 +1,12 @@
+git show-ref
+
+C:\Users\lenovo\workspace\PortalOrg>git show-ref
+21a6f97319526e6abbf9648359dcb5e2c1617ee0 refs/heads/after-previous-component-commit
+21a6f97319526e6abbf9648359dcb5e2c1617ee0 refs/heads/with-before-session
+21a6f97319526e6abbf9648359dcb5e2c1617ee0 refs/remotes/origin/with-before-session
+
+git show-ref --heads -s
+
+C:\Users\lenovo\workspace\PortalOrg>git show-ref --heads -s
+21a6f97319526e6abbf9648359dcb5e2c1617ee0
+21a6f97319526e6abbf9648359dcb5e2c1617ee0

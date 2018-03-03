@@ -1,0 +1,7 @@
+git checkout -b <new-branch without quotes and with hifen as space e.g .before-new-session>
+
+git add .
+
+git commit  -m ""
+
+git push origin new-branch

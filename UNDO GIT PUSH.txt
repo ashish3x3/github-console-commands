@@ -1,0 +1,26 @@
+
+
+https://stackoverflow.com/questions/1270514/undoing-a-git-push
+
+git checkout alpha-0.3.0
+git reset --hard cc4b63bebb6
+git push origin +alpha-0.3.0
+
+
+do got reflog
+take the sha ID/commit id of the last known good commit around HEAD1/2,etc
+a5e33b7 (HEAD -> GD-733-LaunchPad_DM, origin/GD-733-LaunchPad_DM) HEAD@{0}: commit: JIRA ID GD-733 DESCRIPTION : Launchpad design COMMENTS:Added Profiles support TEST-RUN: YES
+
+cd38c03 HEAD@{1}: commit: JIRA ID GD-733 DESCRIPTION : Launchpad design COMMENTS:Added admin.profile TEST-RUN: YES
+
+c6ff976 HEAD@{2}: commit: JIRA ID GD-733 DESCRIPTION : Launchpad design COMMENTS:Added Profiles support TEST-RUN: YES
+
+2636fac HEAD@{3}: commit: JIRA ID GD-733 DESCRIPTION : Launchpad design COMMENTS:removed package version from meta files TEST-RUN: NO
+
+now lets say your branch is GD-733-LaunchPad_DM
+then do 
+
+git reset --hard c6ff976(commit ID)
+
+then do git push origin +GD-733-LaunchPad_DM
++ for force update..done Ur git is reverted to old good position

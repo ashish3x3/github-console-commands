@@ -1,0 +1,10 @@
+
+
+	git pull origin other-branch
+
+Vela_RC1_Branch
+Originate_RC_Branch
+
+
+http://stackoverflow.com/questions/1709177/git-pull-a-certain-branch-from-github
+

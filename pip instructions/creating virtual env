@@ -1,0 +1,86 @@
+cd my_project_folder
+$ virtualenv venv
+virtualenv venv will create a folder in the current directory which will contain the Python executable files, and a copy of the pip library which you can use to install other packages. The name of the virtual environment (in this case, it was venv) can be anything; omitting the name will place the files in the current directory instead.
+
+This creates a copy of Python in whichever directory you ran the command in, placing it in a folder named venv.
+
+You can also use a Python interpreter of your choice.
+
+$ virtualenv -p /usr/bin/python2.7 venv
+This will use the Python interpreter in /usr/bin/python2.7
+
+To begin using the virtual environment, it needs to be activated:
+$ source venv/bin/activate
+
+
+
+
+======================== windows 
+
+Install virtualenv and create two virtualenvs;
+http://www.tylerbutler.com/2012/05/how-to-install-python-pip-and-virtualenv-on-windows-with-powershell/
+
+pip install virtualenv
+
+A:\virtualEnvPython>virtualenv -p C:\Python27\python.exe python27
+
+A:\virtualEnvPython\python27>Scripts\activate 
+
+(python27) A:\virtualEnvPython\python27>
+
+or 
+
+A:\virtualEnvPython>python27\Scripts\activate
+
+(python27) A:\virtualEnvPython>
+
+(python27) A:\virtualEnvPython>Scripts\deactivate.bat
+
+
+
+
+virtualenv -p c:\[path to Python 2.5]\python.exe [path where you want to have virtualenv using Python 2.5 created]\[name of virtualenv]
+
+virtualenv -p c:\[path to Python 2.6]\python.exe [path where you want to have virtualenv using Python 2.6 created]\[name of virtualenv]
+
+for example
+
+virtualenv -p c:\python2.5\python.exe c:\venvs\2.5
+
+virtualenv -p c:\python2.6\python.exe c:\venvs\2.6
+
+then you can activate the first and work with Python 2.5 like this
+c:\venvs\2.5\activate
+and when you want to switch to Python 2.6 you do
+
+deactivate  
+c:\venvs\2.6\activate
+
+
+
+C:\Users\lenovo>cd "A:\virtualEnvPython\"
+
+C:\Users\lenovo>a:
+
+A:\virtualEnvPython>python35\Scripts\activate
+
+(python35) A:\virtualEnvPython>cd "C:\Users\lenovo\Downloads\Video\Machine Learning\Machine_Learning\Deep_Learning_With_Tenserflow"
+
+(python35) A:\virtualEnvPython>c:
+
+(python35) C:\Users\lenovo\Downloads\Video\Machine Learning\Machine_Learning\Deep_Learning_With_Tenserflow>
+
+
+
+
+
+skuid help
+https://community.skuid.com/skuid/topics/_edit_mode_button?topic-reply-list%5Bsettings%5D%5Bfilter_by%5D=all
+
+
+
+
+
+
+
+

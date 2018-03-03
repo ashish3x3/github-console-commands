@@ -1,0 +1,10 @@
+
+
+
+go to folder in cmd
+git init
+git remote add origin <Repository_Location>
+git remote add origin https://gitlab.com/Harmelodic/MyNewProject.git
+
+thrn U can persotm operation like
+git push origin <branch_name>,etc

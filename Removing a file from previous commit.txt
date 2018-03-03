@@ -1,0 +1,19 @@
+
+
+Removing a file from previous commit:
+
+if want to remove TestSkuidNewApplication.cls from a commit ,which was done by mistake
+git rm --cached src\classes\TestSkuidNewApplication.cls
+
+git commit -m "removed test class from commit"
+git push origin  multi-currency-gd-462-hydra
+
+this wil remove it from the tree in origin..
+
+no we have to add it again fresh without any changes..
+
+go to that file TestSkuidNewApplication.cls, roll/reset back to earlier version by coping from git,ect
+commit that file again without any changes
+git add src\classes\TestSkuidNewApplication.cls
+git commit 
+git push

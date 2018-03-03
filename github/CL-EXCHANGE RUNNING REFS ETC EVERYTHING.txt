@@ -1,0 +1,77 @@
+################## CL-EXCHANGE #########################################################
+
+clx is released from zeero.io org and not main org ..
+
+ashish.clx@cloudlendinginc.com
+HA...76
+8aXZE58YKNmbhc4BlIOkcQAY
+
+
+frontend can be accessed using heroku git repo
+git@heroku.com:clexchange-dev.git
+dev:  https://git.heroku.com/clexchange-dev.git
+prod: https://git.heroku.com/clexchange.git
+
+main org: shubham.clexchange@cloudlendinginc.com
+clexchange-dev is linked to org. shubham.zeero and portal.clexchange is linked to org shubham.clexchange
+
+Code: A>clexchange-dev --dev/local
+
+A>clexchange --production
+
+locally run:
+A:\clexchange-dev>"A:\Laptop CLI\F\activator1\activator" run
+running on /0:0:0:0:0:0:0:0:9000 is equal to all address,so localhost will work
+http://localhost:9000/
+
+username: shubham@cloudlendinginc.com
+password: secret 
+clexchange-dev.herokuapp.com/portal.clexchange.io
+
+for localhost:
+withand1992@jourrapide.com
+123
+
+ashish@cloudlendinginc.com
+12345678
+
+Heroku login
+ashish@clouledninginc.com
+HAc..6
+
+dev domain  :clexchange-dev.herokuapp.com
+prod domain : portal.clexchange.io 
+
+to push changes to dev : change/commit locally in A>clx-dev ... push to origin master --it will deploy to master dev
+
+to push to prod : commit to locally A>clx ..push to origin master --it will deploy
+
+to change in dev for login locally : uncomment the above two ine and comment rest and add return data at end
+public static String encrypt(String Data) throws Exception {
+-        // if(true) return Data;
+-        // return Data;
++         if(true) return Data;
++
+         Key key = generateKey();
+         Cipher c = Cipher.getInstance(ALGO);
+         c.init(Cipher.ENCRYPT_MODE, key);
+
+         byte[] encVal = c.doFinal(Data.getBytes());
+         String encryptedValue = new Base64().encodeBase64String(encVal); //new BASE64Encoder().encode(encVal);
+-
+-        return encryptedValue;
++        return Data;
++        //return encryptedValue;
+     }
+
+to over come null pointer exception in scala..don't pass null as paramenter..pass empty string,empty list..like
+
+in loanApplication.java in partnerCustomer at 486
+return ok(partner_customer_application.render(Collections.<Application> emptyList(), "", pageNumber, totalPages, userType));
+instead of nll,null we are passing empty list and empty string..it is considered as good practice.
+
+for scala.htl page: partner_customer_application in view 
+@(loanDetails : List[com.cli.models.loan.Application], loanAppString : String, pageNumber : Integer, totalPages: Integer, userType : String)
+
+
+################## CL-EXCHANGE #######################################################

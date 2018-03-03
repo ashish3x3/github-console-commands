@@ -1,0 +1,5 @@
+Warning: This will delete the local files that are not indexed
+
+Just force it : git checkout -f another-branch
+
+https://stackoverflow.com/questions/4858047/the-following-untracked-working-tree-files-would-be-overwritten-by-checkout
