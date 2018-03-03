@@ -1,0 +1,6 @@
+
+roll back one commit
+
+git log
+git reset --hard 780eb185b5722c69ebd60c654211dc7e6cceed35
+
